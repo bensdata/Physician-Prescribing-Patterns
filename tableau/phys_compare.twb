@@ -1,0 +1,656 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0525.1210                               -->
+<workbook source-build='2020.2.1 (20202.20.0525.1210)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='phys_compare_clean' inline='true' name='federated.0idkyr2193g84m1g025i60ptywpw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='phys_compare_clean' name='textscan.05bz71r08krj2f13dgdat1y7v2wa'>
+            <connection class='textscan' directory='C:/Users/ben/Documents/Data_Analytics/Capstone/Physician-Prescribing-Patterns/data' filename='phys_compare_clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.05bz71r08krj2f13dgdat1y7v2wa' name='phys_compare_clean.csv' table='[phys_compare_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='NPI' ordinal='1' />
+            <column datatype='string' name='Last Name' ordinal='2' />
+            <column datatype='string' name='First Name' ordinal='3' />
+            <column datatype='string' name='Credential' ordinal='4' />
+            <column datatype='string' name='Medical school name' ordinal='5' />
+            <column datatype='real' name='Graduation year' ordinal='6' />
+            <column datatype='string' name='Primary specialty' ordinal='7' />
+            <column datatype='string' name='Secondary specialty 1' ordinal='8' />
+            <column datatype='string' name='Organization legal name' ordinal='9' />
+            <column datatype='real' name='Group Practice PAC ID' ordinal='10' />
+            <column datatype='real' name='Number of Group Practice members' ordinal='11' />
+            <column datatype='string' name='City' ordinal='12' />
+            <column datatype='string' name='State' ordinal='13' />
+            <column datatype='integer' name='Zip Code' ordinal='14' />
+            <column datatype='real' name='Hospital affiliation CCN 1' ordinal='15' />
+            <column datatype='string' name='Hospital affiliation LBN 1' ordinal='16' />
+            <column datatype='real' name='Hospital affiliation CCN 2' ordinal='17' />
+            <column datatype='string' name='Hospital affiliation LBN 2' ordinal='18' />
+            <column datatype='real' name='Hospital affiliation CCN 3' ordinal='19' />
+            <column datatype='string' name='Hospital affiliation LBN 3' ordinal='20' />
+            <column datatype='real' name='Hospital affiliation CCN 4' ordinal='21' />
+            <column datatype='string' name='Hospital affiliation LBN 4' ordinal='22' />
+            <column datatype='real' name='Hospital affiliation CCN 5' ordinal='23' />
+            <column datatype='string' name='Hospital affiliation LBN 5' ordinal='24' />
+            <column datatype='string' name='Professional accepts Medicare Assignment' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.05bz71r08krj2f13dgdat1y7v2wa' name='phys_compare_clean.csv' table='[phys_compare_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='NPI' ordinal='1' />
+            <column datatype='string' name='Last Name' ordinal='2' />
+            <column datatype='string' name='First Name' ordinal='3' />
+            <column datatype='string' name='Credential' ordinal='4' />
+            <column datatype='string' name='Medical school name' ordinal='5' />
+            <column datatype='real' name='Graduation year' ordinal='6' />
+            <column datatype='string' name='Primary specialty' ordinal='7' />
+            <column datatype='string' name='Secondary specialty 1' ordinal='8' />
+            <column datatype='string' name='Organization legal name' ordinal='9' />
+            <column datatype='real' name='Group Practice PAC ID' ordinal='10' />
+            <column datatype='real' name='Number of Group Practice members' ordinal='11' />
+            <column datatype='string' name='City' ordinal='12' />
+            <column datatype='string' name='State' ordinal='13' />
+            <column datatype='integer' name='Zip Code' ordinal='14' />
+            <column datatype='real' name='Hospital affiliation CCN 1' ordinal='15' />
+            <column datatype='string' name='Hospital affiliation LBN 1' ordinal='16' />
+            <column datatype='real' name='Hospital affiliation CCN 2' ordinal='17' />
+            <column datatype='string' name='Hospital affiliation LBN 2' ordinal='18' />
+            <column datatype='real' name='Hospital affiliation CCN 3' ordinal='19' />
+            <column datatype='string' name='Hospital affiliation LBN 3' ordinal='20' />
+            <column datatype='real' name='Hospital affiliation CCN 4' ordinal='21' />
+            <column datatype='string' name='Hospital affiliation LBN 4' ordinal='22' />
+            <column datatype='real' name='Hospital affiliation CCN 5' ordinal='23' />
+            <column datatype='string' name='Hospital affiliation LBN 5' ordinal='24' />
+            <column datatype='string' name='Professional accepts Medicare Assignment' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NPI</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NPI]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>NPI</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Last Name]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Last Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[First Name]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>First Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credential</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Credential]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Credential</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Medical school name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Medical school name]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Medical school name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Graduation year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Graduation year]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Graduation year</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary specialty</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primary specialty]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Primary specialty</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary specialty 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Secondary specialty 1]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Secondary specialty 1</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Organization legal name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Organization legal name]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Organization legal name</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Group Practice PAC ID</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Group Practice PAC ID]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Group Practice PAC ID</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Group Practice members</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Number of Group Practice members]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Number of Group Practice members</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zip Code]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Zip Code</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital affiliation CCN 1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hospital affiliation CCN 1]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Hospital affiliation CCN 1</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital affiliation LBN 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hospital affiliation LBN 1]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Hospital affiliation LBN 1</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital affiliation CCN 2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hospital affiliation CCN 2]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Hospital affiliation CCN 2</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital affiliation LBN 2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hospital affiliation LBN 2]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Hospital affiliation LBN 2</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital affiliation CCN 3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hospital affiliation CCN 3]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Hospital affiliation CCN 3</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital affiliation LBN 3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hospital affiliation LBN 3]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Hospital affiliation LBN 3</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital affiliation CCN 4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hospital affiliation CCN 4]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Hospital affiliation CCN 4</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital affiliation LBN 4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hospital affiliation LBN 4]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Hospital affiliation LBN 4</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital affiliation CCN 5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hospital affiliation CCN 5]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Hospital affiliation CCN 5</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital affiliation LBN 5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hospital affiliation LBN 5]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Hospital affiliation LBN 5</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Professional accepts Medicare Assignment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Professional accepts Medicare Assignment]</local-name>
+            <parent-name>[phys_compare_clean.csv]</parent-name>
+            <remote-alias>Professional accepts Medicare Assignment</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='real' name='[Graduation year]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[NPI]' role='dimension' type='ordinal' />
+      <column aggregation='CountD' caption='Primary specialty (copy)' datatype='string' default-role='measure' default-type='quantitative' name='[Primary specialty (copy)_620933859786108928]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Primary specialty]' />
+      </column>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zip Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='phys_compare_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='phys_compare_clean.csv' id='phys_compare_clean.csv_D8B333D0F20C45E682CB501D93DBB745'>
+            <properties context=''>
+              <relation connection='textscan.05bz71r08krj2f13dgdat1y7v2wa' name='phys_compare_clean.csv' table='[phys_compare_clean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='NPI' ordinal='1' />
+                  <column datatype='string' name='Last Name' ordinal='2' />
+                  <column datatype='string' name='First Name' ordinal='3' />
+                  <column datatype='string' name='Credential' ordinal='4' />
+                  <column datatype='string' name='Medical school name' ordinal='5' />
+                  <column datatype='real' name='Graduation year' ordinal='6' />
+                  <column datatype='string' name='Primary specialty' ordinal='7' />
+                  <column datatype='string' name='Secondary specialty 1' ordinal='8' />
+                  <column datatype='string' name='Organization legal name' ordinal='9' />
+                  <column datatype='real' name='Group Practice PAC ID' ordinal='10' />
+                  <column datatype='real' name='Number of Group Practice members' ordinal='11' />
+                  <column datatype='string' name='City' ordinal='12' />
+                  <column datatype='string' name='State' ordinal='13' />
+                  <column datatype='integer' name='Zip Code' ordinal='14' />
+                  <column datatype='real' name='Hospital affiliation CCN 1' ordinal='15' />
+                  <column datatype='string' name='Hospital affiliation LBN 1' ordinal='16' />
+                  <column datatype='real' name='Hospital affiliation CCN 2' ordinal='17' />
+                  <column datatype='string' name='Hospital affiliation LBN 2' ordinal='18' />
+                  <column datatype='real' name='Hospital affiliation CCN 3' ordinal='19' />
+                  <column datatype='string' name='Hospital affiliation LBN 3' ordinal='20' />
+                  <column datatype='real' name='Hospital affiliation CCN 4' ordinal='21' />
+                  <column datatype='string' name='Hospital affiliation LBN 4' ordinal='22' />
+                  <column datatype='real' name='Hospital affiliation CCN 5' ordinal='23' />
+                  <column datatype='string' name='Hospital affiliation LBN 5' ordinal='24' />
+                  <column datatype='string' name='Professional accepts Medicare Assignment' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='phys_compare_clean' name='federated.0idkyr2193g84m1g025i60ptywpw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0idkyr2193g84m1g025i60ptywpw'>
+            <column datatype='real' name='[Graduation year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Primary specialty]' role='dimension' type='nominal' />
+            <column-instance column='[Primary specialty]' derivation='Count' name='[cnt:Primary specialty:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Graduation year]' derivation='None' name='[none:Graduation year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0idkyr2193g84m1g025i60ptywpw].[cnt:Primary specialty:qk]' />
+              <color column='[federated.0idkyr2193g84m1g025i60ptywpw].[cnt:Primary specialty:qk]' />
+              <text column='[federated.0idkyr2193g84m1g025i60ptywpw].[none:Graduation year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A80E403C-5B75-4F47-86B0-E6B0B75F4B9F}' />
+    </worksheet>
+    <worksheet name='Specialty Counts'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='phys_compare_clean' name='federated.0idkyr2193g84m1g025i60ptywpw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0idkyr2193g84m1g025i60ptywpw'>
+            <column aggregation='CountD' caption='Primary specialty (copy)' datatype='string' default-role='measure' default-type='quantitative' name='[Primary specialty (copy)_620933859786108928]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Primary specialty]' />
+            </column>
+            <column datatype='string' name='[Primary specialty]' role='dimension' type='nominal' />
+            <column-instance column='[Primary specialty (copy)_620933859786108928]' derivation='Count' name='[cnt:Primary specialty (copy)_620933859786108928:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Primary specialty]' derivation='None' name='[none:Primary specialty:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0idkyr2193g84m1g025i60ptywpw].[none:Primary specialty:nk]' direction='DESC' using='[federated.0idkyr2193g84m1g025i60ptywpw].[cnt:Primary specialty (copy)_620933859786108928:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0idkyr2193g84m1g025i60ptywpw].[cnt:Primary specialty (copy)_620933859786108928:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0idkyr2193g84m1g025i60ptywpw].[none:Primary specialty:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{BF6800A1-FA2E-44DB-B72D-890D99581132}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='128'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='24'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='128'>
+            <card pane-specification-id='0' param='[federated.0idkyr2193g84m1g025i60ptywpw].[cnt:Primary specialty:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C57AE370-88EC-47BC-B6F8-0AF4E103B8A6}' />
+    </window>
+    <window class='worksheet' name='Specialty Counts'>
+      <cards>
+        <edge name='left'>
+          <strip size='128'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='24'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4CBDA3E8-242D-45E6-AE92-CAB0178AD7A8}' />
+    </window>
+  </windows>
+</workbook>
