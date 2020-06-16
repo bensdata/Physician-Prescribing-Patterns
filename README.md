@@ -8,4 +8,7 @@ To answer this, I used the following 2 datasets:
   Medicare Provider Utilization and Payment Data: 2017 Part D Prescriber (https://data.cms.gov/Medicare-Part-D/Medicare-Provider-Utilization-and-Payment-Data-201/77gb-8z53)
   Physician Data (https://data.medicare.gov/Physician-Compare/Physician-Compare-National-Downloadable-File/mj5m-pzi6)
   
-  
+
+Python  
+read in prescriber data, selected and renamed columns to reflect the following :   <list used columns>
+read in physician data, selected and renamed columns to reflect the following :   <list used columns>
