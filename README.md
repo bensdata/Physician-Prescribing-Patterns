@@ -1,6 +1,6 @@
 # Physician-Prescribing-Patterns
 
-Currently a work in progress. Expected completion June 25th.
+Currently a work in progress. Will be finished soon
 
 For my project, I am exploring why North Dakota has higher use of antipsychotic drugs. I was alerted to this by Probuclica's exploration of Medicare prescriber data (see here: https://projects.propublica.org/checkup/). I decided to explore further into the North Dakota's use of antipsychotics. Specifically, what providers types are prescribing them and are there hospitals that are linked?
 
