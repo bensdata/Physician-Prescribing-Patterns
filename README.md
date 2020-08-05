@@ -10,7 +10,9 @@ To answer this, I used the following 2 datasets:
  
 Assumptions:
 Antipsychotics list from CMS "Drug Category Lists" (link below)
-Limitations of Medicare data
+bene_count_ge65: changed NaN value to 5
+	Explanation: When there are less than 11 beneficiaries for one provider and one drug, CMS suppresses that data to protect privacy
+	I made assumption that averaging all these would result in something close to 5. 
 
 
 Python  
